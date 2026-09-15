@@ -1,0 +1,11 @@
+<h1>Contador</h1>
+
+<p>Quantidade: {{ contador }}</p>
+
+<button (click)="diminuir()" [disabled]="contador === 0">
+    -
+</button>
+
+<button (click)="aumentar()">
+    +
+</button>

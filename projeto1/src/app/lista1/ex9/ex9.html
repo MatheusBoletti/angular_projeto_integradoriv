@@ -1,0 +1,18 @@
+<h1>Exercício 9 - Controle de Estoque</h1>
+
+<label>
+    Nome do produto:
+    <input type="text" [(ngModel)]="produto">
+</label>
+
+<p>Produto: {{ produto }}</p>
+
+<p>Quantidade em estoque: {{ quantidade }}</p>
+
+<button (click)="diminuirEstoque()" [disabled]="quantidade === 0">
+    -
+</button>
+
+<button (click)="aumentarEstoque()">
+    +
+</button>
